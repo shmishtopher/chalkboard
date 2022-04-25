@@ -1,0 +1,91 @@
+{
+  "name": "chalkboard",
+  "version": "1.0.0",
+  "description": "📽️ Chalkboard is a framework for procedural video creation in JavaScript.",
+  "type": "module",
+  "exports": {
+    ".": null,
+    "./core": "./lib/core/index.js",
+    "./canvas": "./lib/core/canvas.js",
+    "./sketch": "./lib/core/sketch.js",
+    "./timeline": "./lib/core/timeline.js",
+    "./easings": "./lib/easings/index.js",
+    "./easings/*": "./lib/easings/*.js",
+    "./layouts": "./lib/layouts/index.js",
+    "./layouts/*": "./lib/layouts/*.js",
+    "./plots": "./lib/plots/index.js",
+    "./plots/*": "./lib/plots/*.js",
+    "./shapes": "./lib/shapes/index.js",
+    "./shapes/*": "./lib/shapes/*.js",
+    "./text": "./lib/text/index.js",
+    "./text/*": "./lib/text/*.js"
+  },
+  "typesVersions": {
+    "*": {
+      "core": [
+        "./types/core/index.d.ts"
+      ],
+      "canvas": [
+        "./types/core/canvas.d.ts"
+      ],
+      "sketch": [
+        "./types/core/sketch.d.ts"
+      ],
+      "timeline": [
+        "./types/core/timeline.d.ts"
+      ],
+      "easings": [
+        "./types/easings/index.d.ts"
+      ],
+      "easings/*": [
+        "./types/easings/*.d.ts"
+      ],
+      "layouts": [
+        "./types/layouts/index.d.ts"
+      ],
+      "layouts/*": [
+        "./types/layouts/*.d.ts"
+      ],
+      "plots": [
+        "./types/plots/index.d.ts"
+      ],
+      "plots/*": [
+        "./types/plots/*.d.ts"
+      ],
+      "shapes": [
+        "./types/shapes/index.d.ts"
+      ],
+      "shapes/*": [
+        "./types/shapes/*.d.ts"
+      ],
+      "text": [
+        "./types/text/index.d.ts"
+      ],
+      "text/*": [
+        "./types/text/*.d.ts"
+      ]
+    }
+  },
+  "bin": "./cli/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shmishtopher/chalkboard.git"
+  },
+  "keywords": [
+    "animation",
+    "video"
+  ],
+  "author": "Christopher K. 'Shmish' Schmitt",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/shmishtopher/chalkboard/issues"
+  },
+  "homepage": "https://github.com/shmishtopher/chalkboard#readme",
+  "dependencies": {
+    "canvas": "^2.9.1",
+    "commander": "^9.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
