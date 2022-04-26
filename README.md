@@ -2,7 +2,14 @@
 📽️ Chalkboard is a framework for procedural video creation in JavaScript.
 
 ## Installing
-TODO
+Chalkboard can be installed localy or globally using npm
+```
+npm i shmishtopher/chalkboard
+```
+
+```
+npm i -g shmishtopher/chalkboard
+```
 
 ## Basic Usage
 Chalkboard is both a framework for developing procedural animations in JavaScript and a utility for compiling videos.  It uses a simple, declarative timeline and a collection of mutable sketches to describe animations.  It uses ffplay, ffmpeg, and a Cairo-powered canvas implementation on the backend
