@@ -1,59 +1,43 @@
-# chalkboard
+# Chalkboard
 📽️ Chalkboard is a framework for procedural video creation in JavaScript.
 
 ## Installing
-Chalkboard can be installed localy or globally using npm
-```
-npm i shmishtopher/chalkboard
-```
+Chalkboard is a JavaScript library that can be installed locally or globaly with npm.  However, in order to render an preview videos, some additional programs need to be installed and available on your system `PATH`.  The following section details the steps you need to follow to get chalkboard up and running on your system.
 
+### Windows
+Before installing the chalkboard library, you need to get a recent version of node and ffmpeg.  This can be done with package managers like Scoop, Chocolatey, or Winget (recomended) or manually.
+
+#### Installing with Scoop
+You can install all of the system requirements straight from Scoop's main bucket by running:
+```
+scoop install nodejs ffmpeg
+```
+You should then be able to install the chalkboard library using npm:
 ```
 npm i -g shmishtopher/chalkboard
 ```
+Calkboard should now be installed on your system.
+
+#### Installing with Chocolatey
+TODO
+
+#### Installing with Winget
+TODO
+
+#### Manual Installation
+TODO
+
+### Linux
+TODO
+
+### MacOS
+TODO
 
 ## Basic Usage
 Chalkboard is both a framework for developing procedural animations in JavaScript and a utility for compiling videos.  It uses a simple, declarative timeline and a collection of mutable sketches to describe animations.  It uses ffplay, ffmpeg, and a Cairo-powered canvas implementation on the backend
 
 ### CLI Usage
 The chalkboard CLI is your primary tool for viewing and rendering your chalkboard animations.  Use the following commands to get general help.
-```
-> chalkboard --help
-
-Usage: chalkboard [options] [command]
-
-Options:
-  -V, --version               output the version number
-  -h, --help                  display help for command
-
-Commands:
-  preview [options] <source>  Use ffplay to create a preview of an animation without generating a video file on disk
-  render <source> <output>    Use ffmpeg to generate a full-quality animation and write it to disk
-  help [command]              display help for command
-```
-
-```
-> chalkboard help preview
-
-Usage: chalkboard preview [options] <source>
-
-Use ffplay to create a preview of an animation without generating a video file on disk
-
-Options:
-  -f, --fullscreen  display the preview in a borderless fullscreen window (default: false)
-  -l, --loop        continue looping the animation from the begining (default: false)
-  -h, --help        display help for command
-```
-
-```
-> chalkboard help render
-
-Usage: chalkboard render [options] <source> <output>
-
-Use ffmpeg to generate a full-quality animation and write it to disk
-
-Options:
-  -h, --help  display help for command
-```
 
 ### Your First Animation
 TODO
