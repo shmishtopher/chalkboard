@@ -49,6 +49,24 @@ export default class Square extends Sketch {
      * @returns {(t: number) => void} A mutation to draw the outline of the square
      */
     draw(): (t: number) => void;
+    /**
+     * Returns a mutation that applies a stroke color change over time.  Takes
+     * a function that takes a number in [0..1] as input and returns a color
+     * string.
+     *
+     * @param {(t: number) => string} colorFn - A function that takes numbers in the range [0..1] and returns a color string
+     * @returns {(t: number) => void} A mutation to change the stroke color
+     */
+    setStrokeColor(colorFn: (t: number) => string): (t: number) => void;
+    /**
+     * Returns a mutation that applies a fill color change over time.  Takes
+     * a function that takes a number in [0..1] as input and returns a color
+     * string.
+     *
+     * @param {(t: number) => string} colorFn - A function that takes numbers in the range [0..1] and returns a color string
+     * @returns {(t: number) => void} A mutation to change the fill color
+     */
+    setFillColor(colorFn: (t: number) => string): (t: number) => void;
     #private;
 }
 import Sketch from "../core/sketch.js";
