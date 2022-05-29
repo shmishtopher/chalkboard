@@ -1,0 +1,1 @@
+//# sourceMappingURL=ellipse.d.ts.map
